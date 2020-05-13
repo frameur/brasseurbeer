@@ -66,7 +66,7 @@ app.get ("/contact", (req,res) => {
 // Localhost
 const port = 2002;
 app.listen(port, () => {
-  console.log(
+  console.log(process.env.PORT ||
     `Ecoute le port ${port}, lancé à : ${new Date().toLocaleString()}`
   );
 });
