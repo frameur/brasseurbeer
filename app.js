@@ -12,11 +12,6 @@ useUnifiedTopology: true});
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-
-// Route
-const { getHomePage} = require('./routes/index')
-
-
 // Express Static
 app.use(express.static("public"));
 
@@ -54,6 +49,10 @@ const upload = multer({
 
 // Template EJS
 app.set("view engine", "ejs");
+
+// Route
+const { getHomePage} = require('./routes/index')
+
 
 //Page d'accueil
 app.get('/', getHomePage)
