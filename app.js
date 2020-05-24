@@ -7,6 +7,8 @@ const express = require('express')
 
 mongoose.connect('mongodb://localhost:27017/brasbeer',{useNewUrlParser: true,
 useUnifiedTopology: true});
+console.log("status mongoose:", mongoose.connection.readyState);
+
 
 // Middleware
 app.use(express.json())
@@ -105,6 +107,6 @@ app.get ("/contact", (req,res) => {
 
 app.listen(port, () => {
   console.log(process.env.PORT ||
-    `Ecoute le port ${port}, lancé à : ${new Date().toLocaleString()}`
+    ` port ${port}, lancé à : ${new Date().toLocaleString()}`
   );
 });
