@@ -54,8 +54,9 @@ app.set("view engine", "ejs");
 
 // Route
 const { getHomePage} = require('./routes/index')
+const authRoute = require('./routes/auth')
 
-
+app.use('/api/auth', authRoute)
 //Page d'accueil
 app.get('/', getHomePage)
 
