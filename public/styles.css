@@ -150,24 +150,32 @@ section.nav.fixed-top {
 /* formulaire de login */ /* formulaire enregistrement */
 
  #login .container #login-row #login-column #login-box {
-    margin-top: 120px;
-    max-width: 500px;
-    height: 500px;
-    border: 1px solid #9C9C9C;
-    background-color: #EAEAEA;
+    
+    /* max-width: 400px;
+    height: 400px; */
+    
+   
 } 
 
  #login .container #login-row #login-column #login-box #login-form {
-    padding: 10px;
+    /* padding: 10px; */
 } 
 
  #login .container #login-row #login-column #login-box #login-form #register-link {
-    margin-top: -85px;
+    /* margin-top: -85px; */
 } 
 
  ::selection {
-    background-color: #b5e2e7;
+    /* background-color: #b5e2e7; */
 } 
+btn{
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 150px;
+}
+
 
 
 
