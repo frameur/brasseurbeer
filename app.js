@@ -14,6 +14,15 @@ console.log("status mongoose:", mongoose.connection.readyState);
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
+// Route
+const { getHomePage} = require('./routes/index')
+const authRoute = require('./routes/auth')
+
+app.use('/api/auth', authRoute)
+//Page d'accueil
+app.get('/', getHomePage)
+
+
 // Express Static
 app.use(express.static("public"));
 
@@ -52,13 +61,9 @@ const upload = multer({
 // Template EJS
 app.set("view engine", "ejs");
 
-// Route
-const { getHomePage} = require('./routes/index')
-const authRoute = require('./routes/auth')
 
-app.use('/api/auth', authRoute)
-//Page d'accueil
-app.get('/', getHomePage)
+
+
 
 //Page fabrication biere
 app.get('/fabbeer', (req,res) =>{
