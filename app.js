@@ -3,6 +3,7 @@ const express = require('express')
     , multer = require('multer')
     , app = express()
     , port = 2002
+    , verifyToken = require('./routes/verifyToken')
 
 
 mongoose.connect('mongodb://localhost:27017/brasbeer',{useNewUrlParser: true,
@@ -20,7 +21,7 @@ const authRoute = require('./routes/auth')
 
 app.use('/api/auth', authRoute)
 //Page d'accueil
-app.get('/', getHomePage)
+app.get('/', verifyToken, getHomePage)
 
 
 // Express Static
