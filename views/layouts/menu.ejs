@@ -5,43 +5,90 @@
 
 <!-- <button onclick="print('http://localhost:2002/#')">Imprimer le PDF</button> -->
 
-<!-- navbar brand and navbar-->
+<div style="text-align: center; ">
+    <h1>LES BRASSEURS DE FRANCE</h1>
+  </div>
+  
+  
+  <button onclick="print('http://localhost:2002/#')">Imprimer le PDF</button>
+  
+    <!-- navbar brand and navbar-->
+  
+    <section class="nav ">
+      <div class="container menunav">
+          
+          
+          <div class="row">
+              <div class="col-lg-12">
+                  <!--Navbar-->
+                  <nav class="navbar navbar-expand-lg navbar-light blue-grey lighten-5 mb-4">
+  
+                      <!-- Navbar brand -->
+                    <!-- <a class="navbar-brand" href="/">LES BRASSEURS DE FRANCE<img src="" alt=""> </a> -->
+  
+                      <!-- Collapse button -->
+                      <button class="navbar-toggler" type="button" data-toggle="collapse"
+                          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                          aria-expanded="false" aria-label="Toggle navigation"><span
+                              class="navbar-toggler-icon"></span></button>
+  
+                      <!-- Collapsible content -->
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+                          <!-- Links -->
+                          <ul class="navbar-nav mr-auto nav1">
+                              <li class="nav-item">
+                                  
+                                  <a class="nav-link" href="/">Accueil</a>
+                              </li>
+                             
+                              <li class="nav-item">
+                                  <a class="nav-link" href="/">deconnecter</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="/detailbra">Brasseurs</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="/histbeer">Histoire</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="/fabbeer">Fabrication</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="/contact">Contact</a>
+                              </li>
+  
+                          </ul>
+                      </div>
+                     
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </section>
+  
 
-<!-- <section class="nav ">
-    <div class="container menunav"> -->
 
-
-<!-- <div class="row">
-            <div class="col-lg-12"> -->
-<!--Navbar-->
-<!-- <nav class="navbar navbar-expand-lg navbar-light blue-grey lighten-5 mb-4"> -->
-
-<!-- Navbar brand -->
-<!-- <a class="navbar-brand" href="/">LES BRASSEURS DE FRANCE<img src="" alt=""> </a> -->
-
-<!-- Collapse button -->
-<!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation"><span
-                            class="navbar-toggler-icon"></span></button> -->
-
-<!-- Collapsible content -->
-<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-
+<!-- boutons modal -->
 <div class="row">
     <div class="col-lg-6">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscrire">
-            s'inscrire
-        </button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#connecter">
-            se connecter
-        </button>
+        <a class="menu-link" href="/user/create">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscrire">
+                s'inscrire
+            </button>
+          </a>
+        
+        <a class="menu-link" href="/user/login">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#connecter">
+                se connecter
+            </button>
+          </a>
+      
     </div>
 </div>
 
 
-<!-- Modal -->
+<!-- Modal enregistrer -->
 <div class="modal fade" id="inscrire" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
 
@@ -58,23 +105,23 @@
                     <div id="login-row" class="row justify-content-center align-items-center">
                         <div id="login-column" class="col-md-6">
                             <div id="login-box" class="col-md-12">
-                                <form id="login-form" class="form" action="" method="post" enctype="multipart/form-data">
+                                <form id="login-form" class="form" action="/user/register" method="post" enctype="multipart/form-data">
                                     <h3 class="text-center text-dark"></h3>
                                     <div class="form-group">
-                                        <label for="Firstname" class="text-black">Firstname:</label><br>
-                                        <input type="text" name="Firstname" id="Firstname" class="form-control">
+                                        <label for="firstname" class="text-black">Firstname:</label><br>
+                                        <input type="text" name="firstname" id="firstname" placeholder="Text input" class="form-control">
                                     </div>
                                     <div class="form-group">
-                                        <label for="Lastname" class="text-black">Lastname:</label><br>
-                                        <input type="text" name="Lastname" id="Lastname" class="form-control">
+                                        <label for="lastname" class="text-black">Lastname:</label><br>
+                                        <input type="text" name="lastname" id="lastname" placeholder="Text input" class="form-control">
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="text-black">Email:</label><br>
-                                        <input type="text" name="email" id="email" class="form-control">
+                                        <input type="email" name="email" id="email" placeholder="Email input" class="form-control">
                                     </div>
                                     <div class="form-group">
                                         <label for="password" class="text-black">Password:</label><br>
-                                        <input type="text" name="password" id="password" class="form-control">
+                                        <input type="password" name="password" id="password" placeholder="Password" class="form-control">
                                     </div>
 
                                 </form>
@@ -97,14 +144,7 @@
     </div>
 </div>
 
-
-
-<!-- Button trigger modal -->
-
-
-
-
-<!-- Modal -->
+<!-- Modal se connecter -->
 <div class="modal fade" id="connecter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -122,19 +162,19 @@
                         <div id="login-row" class="row justify-content-center align-items-center">
                             <div id="login-column" class="col-md-6">
                                 <div id="login-box" class="col-md-12">
-                                    <form id="login-form" class="form" action="" method="post" enctype="multipart/form-data">
+                                    <form id="login-form" class="form" action="/user/login" method="post" enctype="multipart/form-data">
                                         <h3 class="text-center text-dark"></h3>
                                         <div class="form-group">
-                                            <label for="Firstname" class="text-black">Firstname:</label><br>
-                                            <input type="text" name="Firstname" id="Firstname" class="form-control">
+                                            <label for="firstname" class="text-black">Firstname:</label><br>
+                                            <input type="text" name="firstname" id="firstname" placeholder="Text input" class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label for="Lastname" class="text-black">Lastname:</label><br>
-                                            <input type="text" name="Lastname" id="Lastname" class="form-control">
+                                            <label for="lastname" class="text-black">Lastname:</label><br>
+                                            <input type="text" name="lastname" id="lastname" placeholder="Text input" class="form-control">
                                         </div>
                                         <div class="form-group">
                                             <label for="password" class="text-black">Password:</label><br>
-                                            <input type="text" name="password" id="password" class="form-control">
+                                            <input type="password" name="password" id="password" placeholder="Password" class="form-control">
                                         </div>
                                        
                                     </form>
@@ -160,27 +200,4 @@
 </div>
     
     
-    <!-- Links -->
-    <!-- <ul class="navbar-nav mr-auto nav1">
-
-                            <li class="nav-item">
-                                  
-                                  <a class="nav-link" href="/"></a>
-                              </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/register"></a>
-                                  
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/login"></a>
-                            </li>
-                            
-
-                        </ul>
-                    </div>
-                   
-                </nav>
-            </div>
-        </div>
-    </div>
-</section> -->
+  

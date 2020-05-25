@@ -18,9 +18,11 @@ app.use(express.urlencoded({extended: false}))
 // Route
 const { getHomePage} = require('./routes/index')
 const authRoute = require('./routes/auth')
+const usersRoute = require('./routes/users')
 
+//Api
+app.use('/api/users', usersRoute)
 app.use('/api/auth', authRoute)
-//Page d'accueil
 app.get('/', verifyToken, getHomePage)
 
 
