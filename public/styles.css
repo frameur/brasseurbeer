@@ -24,7 +24,7 @@ h1 {
     padding-top: 15px;
     text-align: center;
     height: 100px;
-    background-color: rgb(92, 87, 87);
+    
     width: 100%;
     
     
@@ -98,6 +98,7 @@ section.nav.fixed-top {
     height: auto;
     color: #fff;
     margin-bottom: auto;
+    background-color: rgb(92, 87, 87);
     
 
 
@@ -150,27 +151,28 @@ section.nav.fixed-top {
 /* formulaire de login */ /* formulaire enregistrement */
 
  #login .container #login-row #login-column #login-box {
-    
-    /* max-width: 400px;
-    height: 400px; */
+    background-color: rgb(101, 224, 107);
+    max-width: 400px;
+    height: 500px;
     
    
 } 
 
  #login .container #login-row #login-column #login-box #login-form {
-    /* padding: 10px; */
+    padding: 10px;
 } 
 
  #login .container #login-row #login-column #login-box #login-form #register-link {
-    /* margin-top: -85px; */
+    margin-top: -85px;
 } 
 
  ::selection {
-    /* background-color: #b5e2e7; */
+    background-color: #b5e2e7;
 } 
-btn{
-    display: flex;
-    justify-content: center;
+.btn{
+    
+    margin: 10px;
+    
 }
 input{
     width: 150px;

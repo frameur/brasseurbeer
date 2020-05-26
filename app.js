@@ -1,6 +1,7 @@
 const express = require('express')
     , mongoose = require('mongoose')
     , multer = require('multer')
+    , path = require('path')
     , app = express()
     , port = 2002
     , verifyToken = require('./routes/verifyToken')
@@ -23,7 +24,7 @@ const usersRoute = require('./routes/users')
 //Api
 app.use('/api/users', usersRoute)
 app.use('/api/auth', authRoute)
-app.get('/', verifyToken, getHomePage)
+app.get('/', verifyToken,  getHomePage)
 
 
 // Express Static
