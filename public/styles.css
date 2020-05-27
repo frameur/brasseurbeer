@@ -24,7 +24,6 @@ h1 {
     padding-top: 15px;
     text-align: center;
     height: 100px;
-    
     width: 100%;
     
     
@@ -105,7 +104,7 @@ section.nav.fixed-top {
 }
 
 .navbar-brand {
-    color:black;
+    color:#fff;
     display: flex;
     justify-content: start;
     font-size: 20px;
@@ -151,7 +150,7 @@ section.nav.fixed-top {
 /* formulaire de login */ /* formulaire enregistrement */
 
  #login .container #login-row #login-column #login-box {
-    background-color: rgb(101, 224, 107);
+    background-color: rgb(177, 204, 178);
     max-width: 400px;
     height: 500px;
     
