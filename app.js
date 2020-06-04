@@ -24,7 +24,7 @@ const usersRoute = require('./routes/users')
 //Api
 app.use('/api/users', usersRoute)
 app.use('/api/auth', authRoute)
-app.get('/', verifyToken,  getHomePage)
+app.get('/',   getHomePage)
 
 
 // Express Static

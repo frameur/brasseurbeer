@@ -3,17 +3,33 @@ const mongoose = require('mongoose')
 
 const brassBeerSchema = new mongoose.Schema({
 
-    nameBrass: String,
-    address: String,
-    nameCp: String,
-    nameTown: String,
-    nameWeb: String,
-    picture: String
+    nameBrass: {
+        type:String
+    },
+    address: {
+        type:String
+    },
+    nameCp: {
+        type:String
+    },
+    nameTown: {
+        type:String
+    },
+    nameWeb: {
+        type:String
+    },
+    picture: {
+        type:String
+    },
+    date: {
+        type:Date,
+        default: Date.now
+      }
 
 
 })
 module.exports = mongoose.model('Brassbeer', brassBeerSchema);
 
-const Brewer = mongoose.model('Brassbeer', brassBeerSchema);
+// const Brewer = mongoose.model('Brassbeer', brassBeerSchema);
 
-module.exports = Brewer;
+// module.exports = Brewer;
