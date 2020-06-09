@@ -40,7 +40,7 @@ router.post('/login', async (req, res) => {
   
   if(!user) return res.status(400).send("Inscrivez vous")
   
-  // Vérifier le mot de pass
+  // Vérifier le mot de passe
   const password = await bcrypt.compare(req.body.password, user.password)
   
   if(!password) return res.status(400).send('Mot de passe incorrect')
