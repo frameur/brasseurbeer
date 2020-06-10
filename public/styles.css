@@ -45,6 +45,36 @@ h5 {
     font-size: 40px;
     text-transform: uppercase;
 }
+@media (max-width: 500px){
+    .lead{
+        font-size: 8px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .btn-primary {
+        display: none;
+    }
+    h1{
+        font-size: 20px;
+        padding-bottom: 5px;
+        display: none;
+    }
+    a.nav-link {
+        font-size: 8px;
+        margin-left: 10px;
+        text-align: center;
+    }
+}
+@media (max-width: 1000px){
+    .btn-primary {
+        display: none;
+    }
+
+}
 
 a {
     color: midnightblue;
