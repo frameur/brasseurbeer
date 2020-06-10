@@ -25,45 +25,46 @@
                         aria-expanded="false" aria-label="Toggle navigation"><span
                             class="navbar-toggler-icon"></span></button>
                     
-                    <!-- Collapsible content -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div style="text-align: center; ">
-                            <h1>BREWER'S FRENCH</h1>
-                        </div>
-                        <!-- Links -->
-                        <ul class="navbar-nav mr-auto nav1">
-                            <li class="nav-item">
-
-                                <a class="nav-link" href="/">Accueil</a>
-                            </li>
-
-                            <li class="nav-item">
-
-                                <a class="nav-link" href="/">deconnecter</a>
-
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/detailbra">Brasseurs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/histbeer">Histoire</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/fabbeer">Fabrication</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact">Contact</a>
-                            </li>
-
-                        </ul>
-                   
+                            <!-- Collapsible content -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div style="text-align: center; ">
+                                    <h1>BREWER'S FRENCH</h1>
+                                </div>
+                                <!-- Links -->
+                                <ul class="navbar-nav mr-auto nav1">
+                                    <li class="nav-item">
+                                        
+                                        <a class="nav-link" href="/">Accueil</a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        
+                                        <a class="nav-link" href="/">deconnecter</a>
+                                        
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/detailbra">Brasseurs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/histbeer">Histoire</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/fabbeer">Fabrication</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/contact">Contact</a>
+                                    </li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+                        </nav>
                     </div>
-
-                </nav>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+        
 <!-- Modal enregistrer -->
 <div class="modal fade" id="inscrire" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
@@ -71,7 +72,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                <h5 class="modal-title" id="exampleModalLabel">REGISTER</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -81,7 +82,7 @@
                     <div id="login-row" class="row justify-content-center align-items-center">
                         <div id="login-column" class="col-md-6">
                             <div id="login-box" class="col-md-12">
-                                <form id="login-form" class="form" action="/users/register" method="post"
+                                <form id="login-form" class="form" action="/auth/register" method="post"
                                     enctype="multipart/form-data">
                                     <h3 class="text-center text-dark"></h3>
                                     <div class="form-group">
@@ -147,7 +148,7 @@
                         <div id="login-row" class="row justify-content-center align-items-center">
                             <div id="login-column" class="col-md-6">
                                 <div id="login-box" class="col-md-12">
-                                    <form id="login-form" class="form" action="/users/login" method="post"
+                                    <form id="login-form" class="form" action="/auth/login" method="post"
                                         enctype="multipart/form-data">
                                         <h3 class="text-center text-dark"></h3>
                                         <div class="form-group">

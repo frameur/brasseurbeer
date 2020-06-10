@@ -60,13 +60,26 @@ h5 {
     }
     h1{
         font-size: 20px;
-        padding-bottom: 5px;
+        
         display: none;
     }
     a.nav-link {
         font-size: 8px;
-        margin-left: 10px;
+        
         text-align: center;
+    }
+    p.card-text{
+        font-size: 5px;
+    }
+}
+@media (max-width: 1025px){
+
+    h1{
+        font-size: 25px;
+    }
+    a.nav-link {
+        font-size: 10px;
+    
     }
 }
 @media (max-width: 1000px){
@@ -75,6 +88,7 @@ h5 {
     }
 
 }
+
 
 a {
     color: midnightblue;
@@ -181,6 +195,20 @@ section.nav.fixed-top {
     color: #fff;
     margin: auto;
    
+}
+button.btn.btn-primary{
+    color: #fff;
+  background-color: #333;
+  transition: all 1s ease-out;
+  margin-left: auto;
+  
+}
+button.btn.btn-primary:hover,
+button.btn.btn-primary:focus{
+    color: #333;
+  background-color: #fff;
+  font-weight: 400;
+  
 }
 
 
