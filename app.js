@@ -116,7 +116,4 @@ app.get ("/contact", (req,res) => {
 // Localhost
 
 app.listen(port, () => {
-  console.log(process.env.PORT ||
-    ` port ${port}, lancé à : ${new Date().toLocaleString()}`
-  );
-});
+  console.log(` port ${port}, lancé à : ${new Date().toLocaleString()}`)})

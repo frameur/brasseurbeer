@@ -217,33 +217,7 @@ button.btn.btn-primary:focus{
 
 /* formulaire de login */ /* formulaire enregistrement */
 
- #login .container #login-row #login-column #login-box {
-    background-color: rgb(177, 204, 178);
-    max-width: 400px;
-    height: 500px;
-    
-   
-} 
 
- #login .container #login-row #login-column #login-box #login-form {
-    padding: 10px;
-} 
-
- #login .container #login-row #login-column #login-box #login-form #register-link {
-    margin-top: -85px;
-} 
-
- ::selection {
-    background-color: #b5e2e7;
-} 
-.btn{
-    
-    margin: 10px;
-    
-}
-input{
-    width: 150px;
-}
 
 
 
