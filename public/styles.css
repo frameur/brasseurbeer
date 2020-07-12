@@ -13,11 +13,8 @@ body {
     height:100vh;
     overflow-x: hidden;
     background-color: burlywood;
-    
-
     object-fit: contain;
-   
-    
+      
 }
 
 h1 {
@@ -117,13 +114,7 @@ footer {
    
     
 }
-.card{
-    margin: auto;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    width: auto;
-}
+
 
 /* menu  nav*/
 .col-lg-12 {
@@ -216,7 +207,7 @@ button.btn.btn-primary:focus{
 
 
 
-/* formulaire de login */ /* formulaire enregistrement */
+
 
 
 
